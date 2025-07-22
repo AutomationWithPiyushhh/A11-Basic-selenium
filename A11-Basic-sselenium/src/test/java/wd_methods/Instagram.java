@@ -30,9 +30,8 @@ public class Instagram {
 //		int h = dim1.getHeight();
 //		System.out.println(h);
 
-//		Dimension dim2 = new Dimension(1008,528);
-
-//		win.setSize(dim2);
+		Dimension dim2 = new Dimension(1000, 500);
+		win.setSize(dim2);
 		
 		
 		Point pt1 = win.getPosition();
