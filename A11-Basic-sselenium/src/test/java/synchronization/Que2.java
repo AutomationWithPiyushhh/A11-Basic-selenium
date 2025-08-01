@@ -15,21 +15,21 @@ public class Que2 {
 		
 		driver.get("https://demoqa.com/automation-practice-form/");
 
-//		WebElement first = driver.findElement(By.id("firstName"));
-//		first.sendKeys("kashish");
+		WebElement first = driver.findElement(By.id("firstName"));
+		first.sendKeys("kashish");
 //
-//		WebElement last = driver.findElement(By.id("lastName"));
-//		last.sendKeys("lakhwani");
-//
-//		WebElement email = driver.findElement(By.id("userEmail"));
-//		email.sendKeys("kashishlakhwani52@gmail.com");
+		WebElement last = driver.findElement(By.id("lastName"));
+		last.sendKeys("lakhwani");
 
-//		WebElement mobile = driver.findElement(By.id("userNumber"));
-//		mobile.sendKeys("9369570399");
+		WebElement email = driver.findElement(By.id("userEmail"));
+		email.sendKeys("kashishlakhwani52@gmail.com");
+
+		WebElement mobile = driver.findElement(By.id("userNumber"));
+		mobile.sendKeys("9369570399");
 
 //		Thread.sleep(5000);
-//		WebElement radio = driver.findElement(By.xpath("//label[text()='Female']"));
-//		radio.click();
+		WebElement radio = driver.findElement(By.xpath("//label[text()='Female']"));
+		radio.click();
 
 		WebElement subjects = driver.findElement(By.xpath(
 				"//div[@class='subjects-auto-complete_value-container subjects-auto-complete_value-container--is-multi css-1hwfws3']"));
@@ -39,5 +39,7 @@ public class Que2 {
 		WebElement submit = driver.findElement(By.id("submit"));
 		submit.click();
 
+		Thread.sleep(3000);
+		driver.quit();
 	}
 }
