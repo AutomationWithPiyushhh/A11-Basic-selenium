@@ -35,7 +35,7 @@ public class SingleSelectDropDown {
 		selCar.selectByIndex(0);
 
 		List<WebElement> options = selCar.getAllSelectedOptions();
-		for (WebElement i : options) {
+		for (WebElement i : options) { 
 			System.out.println(i.getText());
 			Thread.sleep(100);
 		}
