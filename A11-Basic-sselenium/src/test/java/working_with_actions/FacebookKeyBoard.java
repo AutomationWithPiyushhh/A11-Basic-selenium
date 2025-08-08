@@ -26,12 +26,14 @@ public class FacebookKeyBoard {
 		act.sendKeys("admin").build().perform();
 
 //		select all + copy
+		act.keyDown(Keys.CONTROL).sendKeys("a" + "c").keyUp(Keys.CONTROL).build().perform();
 
 //		go to pwd => press tab & release it
 		act.keyDown(Keys.TAB).build().perform();
 		act.keyUp(Keys.TAB).build().perform();
 
 //		paste
+		act.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).build().perform();
 
 //		press enter
 		act.keyDown(Keys.ENTER).build().perform();
