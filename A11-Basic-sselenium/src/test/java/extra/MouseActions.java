@@ -20,9 +20,9 @@ public class MouseActions {
 //		Select sel = new Select(webelement);
 
 		Actions act = new Actions(driver);
-//
+
 //		WebElement link = driver.findElement(By.linkText("Forgotten password?"));
-//
+
 //		act.moveToElement(link).build().perform();
 
 //		act.click().build().perform();
